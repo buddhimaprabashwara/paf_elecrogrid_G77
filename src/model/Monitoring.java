@@ -62,7 +62,7 @@ public class Monitoring {
 				return "Error while connecting to the database for reading.";
 			}
 			// Prepare the html table to be displayed
-			output = "<table border=\"1\"><tr><th>Bill ID</th><th>Account No</th><th>Date</th><th>Unit Total</th><th>Unit Price</th><th>Amount</th></tr>";
+			output = "<table border=\"1\"><tr><th>userID</th><th>Date</th><th>Last reading</th><th>New reading</th><th>Acc No</th><th>Address</th></tr>";
 			String query = "select * from monitorings";
 			Statement stmt = (Statement) con.createStatement();
 			ResultSet rs = ((java.sql.Statement) stmt).executeQuery(query);
