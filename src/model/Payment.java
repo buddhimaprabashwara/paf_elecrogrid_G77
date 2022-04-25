@@ -62,7 +62,7 @@ public class Payment {
 				return "Error while connecting to the database for reading.";
 			}
 			// Prepare the html table to be displayed
-			output = "<table border=\"1\"><tr><th>Payment ID</th><th>Card Holder name</th><th>Card type</th><th>Card number</th><th>Expiry date</th><th>Security code</th></tr>";
+			output = "<table border=\"1\"><tr><th>Payment ID</th><th>Card Holder name</th><th>Card type</th><th>Card number</th><th>Expiry date</th><th>CVN</th></tr>";
 			String query = "select * from payments";
 			Statement stmt = (Statement) con.createStatement();
 			ResultSet rs = ((java.sql.Statement) stmt).executeQuery(query);
